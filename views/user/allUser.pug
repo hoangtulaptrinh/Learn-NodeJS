@@ -1,0 +1,14 @@
+extends ../layout/common.pug
+
+block content
+  h1 list
+  a(href=`/users/create`) Go To Create
+  each user in listUser
+      div(class='flex-column')
+        span= `id của user là: ${user.id}`
+        span= `tên của user là: ${user.name}`
+        a(href=`/users/${user.id}`) Go To Detail
+        input(type="text",class='form-control',placeholder='test bootstrap') 
+        button(class='btn btn-primary') test bootstrap
+block footer
+  h1 test footer
