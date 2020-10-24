@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import find from 'lodash/find';
+require('dotenv').config();
 
 import useRoutes from './routes/user';
 
